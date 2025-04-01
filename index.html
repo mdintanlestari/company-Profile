@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=h1, initial-scale=1.0" />
+    <title>Company Profile</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Nomor 1 -->
+    <div class="about">
+      <h1>Tentang Perusahaan Kami</h1>
+      <div class="photo">
+        <img src="img/main.jpg" alt="photo" />
+        <p>
+          Rhoncus eget ut lacus sed euismod id cras enim eu. Lobortis integer at
+          mi eget. Tellus a elementum malesuada mi placerat massa. Sagittis
+          viverra habitasse nunc tortor urna diam diam sem eget. Fusce lorem
+          amet sed phasellus nunc et quam.
+          <b>Sed proin urna tincidunt massa</b>. Varius congue dolor ipsum
+          adipiscing.
+          <b
+            >Fermentum urna nullam nibh senectus gravida leo morbi elementum
+            arcu</b
+          >.
+        </p>
+      </div>
+    </div>
+
+    <!-- Nomor 2 -->
+    <div class="structure">
+      <h2>A. Struktur Perusahaan</h2>
+      <div class="jabatan">
+        <div class="row">
+          <ol>
+            <li><b>1. CEO : George Philips</b></li>
+          </ol>
+        </div>
+        <div class="row row-2">
+          <ol start="2">
+            <li><b>2. CTO : Vishal Singh</b></li>
+          </ol>
+          <ul>
+            <li>a. Divisi Finance & Accounting</li>
+            <ol>
+              <li>Manager : Jill Wright</li>
+              <li>Anggota tim :</li>
+              <ol>
+                <li>Jacob Hayes</li>
+                <li>Louis Tomlinson</li>
+              </ol>
+            </ol>
+          </ul>
+          <ul>
+            <li>b. Divisi IT Technology</li>
+            <ol>
+              <li>Manager : Aditya Ishaan Akhil</li>
+              <li>Anggota tim :</li>
+              <ol>
+                <li>Josephine Larson</li>
+                <li>Ravindra Singh</li>
+              </ol>
+            </ol>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nomor 3 -->
+    <div class="form">
+      <div class="form-a">
+        <h2>B. Form Registrasi Karyawan Baru</h2>
+        <p>
+          Mohon untuk mengisi form dibawah ini untuk registrasi karyawan baru.
+        </p>
+        <label class="bold" for="name">Nama Lengkap</label> <br />
+        <input
+          class="kolom"
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Masukkan Nama Lengkap"
+        />
+        <br />
+        <label class="bold" for="date">Tanggal Lahir</label> <br />
+        <input
+          class="kolom"
+          type="date"
+          name="date"
+          id="date"
+          placeholder="dd/mm/yyyy"
+        />
+        <br />
+        <label class="bold" for="email">Alamat Email</label> <br />
+        <input
+          class="kolom"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="example@company.com"
+        />
+        <p>Pilih divisi untuk karyawan baru</p>
+        <input class="bullet" type="radio" name="divisi1" id="finance" />
+        <label for="divisi">Divisi Finance & Accounting</label><br />
+        <input class="bullet" type="radio" name="divisi1" id="it" />
+        <label for="divisi1">Divisi IT Technology</label>
+      </div>
+
+      <div class="form-b">
+        <p>
+          Pilih jadwal hari untuk WFO dalam satu minggu, sesuai dengan divisi
+          yang dipilih
+        </p>
+        <input
+          class="box"
+          type="checkbox"
+          name="day1"
+          id="day1"
+          value="senin"
+        />
+        <label for="day1">Senin</label><br />
+        <input
+          class="box"
+          type="checkbox"
+          name="day2"
+          id="day2"
+          value="selasa"
+        />
+        <label for="day2">Selasa</label><br />
+        <input class="box" type="checkbox" name="day3" id="day3" value="rabu" />
+        <label for="day3">Rabu</label><br />
+        <input
+          class="box"
+          type="checkbox"
+          name="day4"
+          id="day4"
+          value="kamis"
+        />
+        <label for="day4">Kamis</label><br />
+        <input
+          class="box"
+          type="checkbox"
+          name="day5"
+          id="day5"
+          value="jumat"
+        />
+        <label for="day5">Jumat</label><br />
+
+        <p>Lampirkan Foto ID Card Pegawai</p>
+        <input type="file" id="file" hidden />
+        <label class="select" for="file">Select File</label>
+
+        <p>Jika terdapat notes lainnya, mohon dapat ditulis dibawah</p>
+        <label for="textarea"></label>
+        <textarea class="textarea" name="textarea" rows="5" cols="50">
+          Masukkan Notes...</textarea
+        >
+        <br />
+        <button class="submit" type="submit">Submit Form</button>
+      </div>
+    </div>
+
+    <!-- Nomor 4 -->
+    <div class="data">
+      <h2>C. Tabel Data karyawan</h2>
+      <div class="table">
+        <table>
+          <tr class="judul">
+            <th>ID Karyawan</th>
+            <th>Nama Lengkap</th>
+            <th>Divisi</th>
+            <th>Jadwal WFO</th>
+            <th>Alamat Email</th>
+            <th>foto Karyawan</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>John Doe</td>
+            <td>IT Technology</td>
+            <td>Selasa, Rabu,Jumat</td>
+            <td>jhondoe@company.com</td>
+            <td><img src="img/photo2.jpg" /></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Christina Liauw</td>
+            <td>Finance & Accounting</td>
+            <td>Senin, Selasa, Kamis</td>
+            <td>chistinaliauw@company.com</td>
+            <td><img src="img/photo1.jpg" /></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

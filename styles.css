@@ -1,0 +1,197 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  margin: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Nomor 1 */
+.about {
+  margin-bottom: 50px;
+}
+
+.about h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: 900;
+}
+
+.photo {
+  display: flex;
+
+  gap: 30px;
+
+  img {
+    border: 5px solid red;
+    padding: 10px;
+    width: 50%;
+  }
+
+  p {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+}
+
+/* Nomor 2 */
+.jabatan {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.row {
+  border: 2px solid black;
+  width: 100%;
+  height: 380px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+}
+
+.row-2 {
+  display: block;
+  padding-top: 35px;
+}
+
+li,
+ol {
+  list-style: none;
+}
+
+/* Nomor 3 */
+.form {
+  display: flex;
+  font-size: 15px;
+  line-height: 1;
+}
+
+.form-a {
+  h2 {
+    margin-bottom: 30px;
+  }
+
+  .bold {
+    font-weight: 600;
+  }
+
+  .kolom {
+    height: 35px;
+    width: 300px;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .bullet {
+    transform: scale(1.8);
+    margin-right: -5px;
+  }
+}
+
+.form-b {
+  margin-top: 65px;
+
+  .box {
+    transform: scale(1.8);
+    margin-right: -5px;
+  }
+
+  .select {
+    background-color: #e6eaee;
+    border: 2px solid #848688;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .textarea {
+    display: flex;
+    padding-top: 20px;
+    padding-left: 0;
+    margin-top: -5px;
+    color: #848688;
+  }
+
+  .submit {
+    background-color: #e6eaee;
+    border: 2px solid #848688;
+    border-radius: 2px;
+    cursor: pointer;
+    display: inline-block;
+    width: 120px;
+    height: 45px;
+    margin-top: -10px;
+  }
+}
+
+/* Nomor 4 */
+
+.data h2 {
+  margin-bottom: 30px;
+  display: grid;
+}
+.table {
+  border-spacing: 0;
+  background-color: #e6f7f7;
+  width: 100%;
+  padding: 20px;
+  overflow-x: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+table {
+  border-collapse: collapse;
+  min-width: 600px;
+  text-align: center;
+}
+
+th,
+td {
+  border: 1px solid black;
+  width: 16.66%;
+}
+
+.judul {
+  height: 50px;
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .photo {
+    flex-direction: column;
+    text-align: center;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .jabatan {
+    flex-wrap: wrap;
+  }
+
+  .form {
+    flex-wrap: wrap;
+
+    .form-b {
+      margin-top: 0;
+    }
+  }
+
+  table {
+    min-width: 100%;
+  }
+}
